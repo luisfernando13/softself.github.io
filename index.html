@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>SoftSelf || Desarrollo de Software </title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="Hacemos desarrollo de software que te ayuda a a dar soluciones a problemas por medio de un software. Cuenta con experiencia y responsabilidad" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6EWH5Y1Y0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-L6EWH5Y1Y0');
+  </script>
+
+  <!-- Favicons 
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">-->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <script>
+    function f_Enviar() {
+
+      sNombre = document.forms['contactenos']['vNombre'].value;
+      sEmailx = document.forms['contactenos']['vEmail'].value;
+      sAsunto = document.forms['contactenos']['vAsunto'].value;
+      nNumero = document.forms['contactenos']['vTelefono'].value;
+      sMensaj = document.forms['contactenos']['vMensaje'].value;
+
+
+      if (sNombre == "") {
+        alert("El nombre es requerido");
+      } else if (sEmailx == "") {
+        alert("Ingrese un correo valido");
+      } else if (sAsunto == "SELECCIONE") {
+        alert("El asunto es requerido");
+      } else if (sAsunto == "") {
+        alert("El asunto es requerido");
+      } else if (nNumero == "") {
+        alert("El numero de teléfono es requerido");
+      } else if (sMensaj == "") {
+        alert("Mensaje es requerido");
+      } else {
+        alfa = document.forms['contactenos']['vBandera'].value = "1";
+        document.forms['contactenos'].submit();
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <!-- <h1><a href="index.php" class="scrollto"> &lt;/SoftSelf&gt; </a></h1> -->
+        <h1><a href="index.php" class="scrollto">SoftSelf</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title="" /></a>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.php">Inicio</a></li>
+          <li><a href="#about">Sobre Nosotros</a></li>
+          <li><a href="#services">Beneficios</a></li>
+          <!-- <li><a href="#portfolio">Portafolio</a></li> -->
+          <li class="menu-has-children"><a href="">Servicios</a>
+            <ul>
+              <li><a href="frservi1.php">Desarrollo de Apps Móviles</a></li>
+              <li><a href="frservi2.php">Desarrollo de Aplicaciones Web</a></li>
+              <li><a href="frservi3.php">Desarrollo de Páginas Web</a></li>
+              <li><a href="frservi4.php">Fábrica de Software</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contáctenos</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/intro-carousel/2.jpg" alt="Aplicacion Web"></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Desarrollo de Aplicaciones Web</h2>
+                <p>Desarrollamos una aplicación a la medida en la nube para que puedas acceder a ella en cualquier momento desde cualquier navegador.</p>
+                <a href="frservi2.php" class="btn-get-started scrollto">!Lo quiero!</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="img/intro-carousel/1.jpg" alt="Aplicacion Movil"></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Desarrollo de Apps Móviles</h2>
+                <p>Da un gran salto al mundo moderno con una aplicación totalmente personalizable a tus requerimientos.</p>
+                <a href="frservi1.php" class="btn-get-started scrollto">!Lo quiero!</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/intro-carousel/3.jpg" alt="Pagina Web"></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Desarrollo de Páginas Web</h2>
+                <p>Tener tu negocio en la web es la mejor decisión que puedes tomar, ya que obtendrás una gran pagina a un bajo precio.</p>
+                <a href="frservi3.php" class="btn-get-started scrollto">!Lo quiero!</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/intro-carousel/4.jpg" alt="Fabrica de Software"></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>Fábrica de Software</h2>
+                <p>Acá puedes desarrollar cualquier idea que tengas de la mano de expertos para poder sacar el máximo beneficio de este.</p>
+                <a href="frservi4.php" class="btn-get-started scrollto">!Lo quiero!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      Featured Services Section
+    ============================-->
+    <section id="featured-services">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 box">
+
+            <i class="ion-locked"></i>
+            <h4 class="title"><a href="">Software Seguro</a></h4>
+            <p class="description">Manejo de desarrollo seguro y confiable, para prevenir ataques informáticos y robo sé de información.</p>
+          </div>
+
+          <div class="col-lg-4 box box-bg">
+            <i class="ion-ios-speedometer-outline"></i>
+
+            <h4 class="title"><a href="">Efectivo</a></h4>
+            <p class="description">Buscamos que el software sea efectivo frente a las funciones que tenga que desempeñar.</p>
+          </div>
+
+          <div class="col-lg-4 box">
+            <i class="ion-ios-world"></i>
+            <h4 class="title"><a href="">Accesible</a></h4>
+            <p class="description">Se garantiza accesibilidad desde cualquier lugar del mundo, en diferentes dispositivos para mayor comodidad.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- #featured-services -->
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Sobre Nosotros</h3>
+          <p>Somos una empresa en crecimiento orientada principalmente al desarrollo de software, resolviendo las necesidades de nuestros clientes, manejando las últimas tecnologías en desarrollo para mejorar la productividad y funcionamiento de nuestros programas.</p>
+        </header>
+
+        <div class="row about-cols">
+
+          <div class="col-md-6 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/about-mission.jpeg" alt="Softself Desarrollo de Software" class="img-fluid">
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Misión</a></h2>
+              <p>
+                Desarrollo de software de alta calidad con los últimos estándares informáticos. Siempre buscando las mejores soluciones a las necesidades de nuestros clientes.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/about-vision.jpeg" alt="Softself Desarrollo de Software" class="img-fluid">
+                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Visión</a></h2>
+              <p>
+                Ser una de las empresas más reconocidas,caracterizándonos por la puntualidad, calidad, desarrollo y nuevas tecnologías en el mercado global.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #about -->
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Beneficios</h3>
+          <p>Como compañía nos encargamos de darte estos beneficios y garantías a nuestros clientes.</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-gear-b"></i></div>
+            <h4 class="title"><a href="">Adaptable</a></h4>
+            <p class="description">Software totalmente adaptable a tus necesidades.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-bug"></i></div>
+            <h4 class="title"><a href="">Desarrollo Efectivo</a></h4>
+            <p class="description">Manejamos procesos en los cuales prevengamos posibles errores en el código.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-android-call"></i></div>
+            <h4 class="title"><a href="">Soporte</a></h4>
+            <p class="description">Tenemos a expertos en el área para que te puedan colaborar con lo que necesites.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-settings"></i></div>
+            <h4 class="title"><a href="">Soporte</a></h4>
+            <p class="description">Atención personalizada con expertos en el área, dando solución a cualquier problema.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-android-upload"></i></div>
+            <h4 class="title"><a href="">Software en la Nube</a></h4>
+            <p class="description">Alojamiento del software en la nube, evitando costos de infraestructura.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="icon"><i class="ion-ios-locked"></i></div>
+            <h4 class="title"><a href="">Software Seguro</a></h4>
+            <p class="description">Se maneja desarrollo seguro y confiable esto con el fin de prevenir ataques informaticos o robo de informacion.</p>
+          </div>
+        </div>
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Call To Action Section
+    ============================-->
+    <section id="call-to-action" class="wow fadeIn">
+      <div class="container text-center">
+        <h3>Productos Adicionales</h3>
+        <p>En esta sección podrás ver productos adicionales que ofrecemos para mejorar tu compañía.</p>
+        <button class="cta-btn" id="vServiciosAdicionales" style="background-color:#18d26e">VER MAS</button>
+      </div>
+    </section><!-- #call-to-action -->
+
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <div id="nServiciosAdicionales" style="display: none">
+      <section id="services">
+        <div class="container">
+          <input type="hidden" id="vActivador" value="">
+
+          <header class="section-header wow fadeInUp">
+            <h3>Productos Adicionales</h3>
+            <p>Puedes solicitarnos adquirir estas mejoras para tu software.</p>
+          </header>
+
+          <div class="row">
+
+            <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+              <div class="icon"><i class="ion-android-chat"></i></div>
+              <h4 class="title"><a href="">Chat Bot</a></h4>
+              <p class="description">Bot para tu página, el cual puede ayudar e indicar a los usuarios que ingresen a esta.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+              <div class="icon"><i class="ion-code-working"></i></div>
+              <h4 class="title"><a href="">Desarrollos Personalizados</a></h4>
+              <p class="description">Con SoftSelf ningún programa es único, si deseas nuevos procesos o características para tu software no dudes en solicitarlo.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+              <div class="icon"><i class="ion-ios-cart"></i></div>
+              <h4 class="title"><a href="">Tienda</a></h4>
+              <p class="description">Puedes adquirir o ampliar tu software con una tienda en la cual puedes vender múltiples productos.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+              <div class="icon"><i class="ion-earth"></i></div>
+              <h4 class="title"><a href="">SEO</a></h4>
+              <p class="description">Ubicacion de tu página en los navegadores principales para que en cada búsqueda los usuarios te encuentren más fácil mejorando el posicionamiento de tu empresa.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+              <div class="icon"><i class="ion-social-facebook"></i></div>
+              <h4 class="title"><a href="">Marketing </a></h4>
+              <p class="description">Hacemos campañas de marketing para mejorar el posicionamiento de tu empresa.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- #services -->
+
+    <!--==========================
+      Skills Section
+    ============================-->
+    <!-- <section id="skills">
+      <div class="container">
+        <header class="section-header">
+          <h3>Our Skills</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+        </header>
+        <div class="skills-content">
+          <div class="progress">
+            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">HTML <i class="val">100%</i></span>
+            </div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">CSS <i class="val">90%</i></span>
+            </div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+            </div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+              <span class="skill">Photoshop <i class="val">55%</i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!--==========================
+      Facts Section
+    ============================-->
+    <section id="facts" class="wow fadeIn">
+      <div class="container">
+        <header class="section-header">
+          <h3>Nuestros Números</h3>
+        </header>
+        <div class="row counters">
+          <div class="col-lg-4 col-6 text-center">
+            <span data-toggle="counter-up">1</span>
+            <p>Clientes</p>
+          </div>
+          <div class="col-lg-4 col-6 text-center">
+            <span data-toggle="counter-up">1</span>
+            <p>Proyectos</p>
+          </div>
+          <div class="col-lg-4 col-12 text-center">
+            <span data-toggle="counter-up">3529</span>
+            <p>Líneas de Código</p>
+          </div>
+        </div>
+        <!-- <div class="facts-img">
+          <img src="img/facts-img.png" alt="" class="img-fluid">
+        </div> -->
+      </div>
+    </section>
+
+    <!-- #facts -->
+
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio" class="section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <h3 class="section-title">Portafolio</h3>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Todo</li>
+              <!--<li data-filter=".filter-app">Apps</li>-<li data-filter=".filter-card">Software</li>-->
+              <li data-filter=".filter-web">Páginas Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/facts-img.png" class="img-fluid" alt="">
+                <a href="img/facts-img.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="https://asogeam.com/" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+              <div class="portfolio-info">
+                <h4><a href="#">Asogeam</a></h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- APPS  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/app3.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+              <div class="portfolio-info">
+                <h4><a href="#">App 3</a></h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>-->
+
+          <!-- CARDS
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio/card1.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+              <div class="portfolio-info">
+                <h4><a href="#">Card 1</a></h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>-->
+        </div>
+      </div>
+    </section>
+    <!-- #portfolio -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <!-- <section id="clients" class="wow fadeInUp">
+      <div class="container">
+        <header class="section-header">
+          <h3>Nuestros Clientes</h3>
+        </header>
+        <div class="owl-carousel clients-carousel">
+          <img src="img/clients/client-1.png" alt="">
+        </div>
+      </div>
+    </section> -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <!-- <section id="testimonials" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Testimonios</h3>
+        </header>
+        <div class="owl-carousel testimonials-carousel">
+          <div class="testimonial-item">
+            <img src="img/clients/piedepagina.png" class="testimonial-img" alt="">
+            <h3>Asogeam</h3>
+            <h4>Ceo &amp; Fundador</h4>
+            <p>
+              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">
+              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              <img src="img/quote-sign-right.png" class="quote-sign-right" alt="">
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section> -->
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h3>Contáctenos</h3>
+          <p>¡No lo piense más y obtenga el mejor software!</p>
+        </div>
+
+        <div class="row contact-info">
+          <div class="col-md-6">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Teléfono Celular</h3>
+              <p><a href="tel:+155895548855">+57 3144468765</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">softself@softself.co</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="form">
+          <form id="contactenos" name="contactenos" method="POST">
+            <input type="hidden" value="0" name="vBandera">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="vNombre" class="form-control" id="vNombre" placeholder="Tu Nombre" />
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="vEmail" id="vEmail" placeholder="Email" />
+              </div>
+              <div class="form-group col-md-6">
+                <select class="form-control" name="vAsunto">
+                  <option value="SELECCIONE">Tipo de Solicitud</option>
+                  <option value="Pagina web">Pagina Web</option>
+                  <option value="Aplicacion Movil">Aplicacion Movil</option>
+                  <option value="Aplicacion Web">Aplicacion Web</option>
+                  <option value="Desarrollo Personalizado">Desarrollo Personalizado</option>
+                  <option value="Otro">Otro</option>
+                </select>
+                <span class="focus-input100"></span>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" name="vTelefono" id="vTelefono" placeholder="Telefono" />
+              </div>
+              <div class="form-group col-md-12">
+                <textarea class="form-control" name="vMensaje" rows="5" placeholder="Mensaje"></textarea>
+              </div>
+              <div class="form-group col-md-12">
+                <div class="text-center"><button type="button" style="background: #18d26e;border: 0;padding: 10px 30px;color: #fff;transition: 0.4s;cursor: pointer;" onclick="f_Enviar()">Enviar Mensaje</button></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer-info">
+            <!-- <h3>&lt;/SoftSelf&gt;</h3> -->
+            <h3>SoftSelf</h3>
+            <p>¡No lo piense más y obtenga el mejor software!</p>
+          </div>
+          <div class="col-lg-6 col-md-6 footer-links">
+            <h4>Acceso Rapido</h4>
+            <ul class="accesorapido">
+              <li><i class="ion-ios-arrow-right"></i> <a href="#intro">Inicio</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#about">Sobre Nosotros</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#services">Beneficios</a></li>
+              <!-- <li><i class="ion-ios-arrow-right"></i> <a href="#portfolio">Portafolio</a></li> -->
+              <li><i class="ion-ios-arrow-right"></i> <a href="#contact">Contáctenos</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contáctenos</h4>
+            <p>
+              <!--A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br>-->
+              <strong>Teléfono Celular:</strong> +57 3144468765<br>
+              <strong>Email:</strong> softself@softself.co<br>
+            </p>
+            <!--<div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>-->
+          </div>
+          <!-- <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit"  value="Subscribe">
+            </form>
+          </div>-->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>SoftSelf</strong>. Todos los derechos Reservados
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+  <script>
+    $(document).ready(function() {
+      $("#vServiciosAdicionales").click(function() {
+        var activador = $("#vActivador").val();
+        if (activador == "") {
+          $("#nServiciosAdicionales").css("display", "block");
+          $("#vActivador").val('1');
+        } else {
+          $("#nServiciosAdicionales").css("display", "none");
+        }
+        if (activador == 1) {
+          $("#vActivador").val('');
+        }
+      })
+    });
+  </script>
+
+</body>
+
+</html>
